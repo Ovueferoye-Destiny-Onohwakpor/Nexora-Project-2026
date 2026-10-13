@@ -1,1 +1,14 @@
-# Nexora-Project-2026
+Portfolio Case Study: Nexora Retail Nigeria Ltd.
+1. Context
+Nexora Retail Nigeria Ltd. required a comprehensive review to understand how their business performed over the past one and a half years. The primary mandate was to go beyond presenting high-level sales figures and leverage available data to evaluate commercial performance, identify areas of concern, and highlight strategic opportunities for improvement.
+2. Problem
+The business lacked clear visibility into why it fell short of its commercial goals over the 18-month period. While Nexora generated a substantial ₦3.44 billion in Net Sales, it only achieved 96.90% of its sales target, leaving a 3.10% shortfall. Furthermore, evaluating performance strictly by sales volume created a strategic blind spot; the company needed to quantify how discounts, refunds, product returns, and store-level variances were impacting the actual value the business retained.
+3. Approach
+   Data Pipeline & Cleaning: Processed the raw datasets in Power Query, fixing widespread data type errors, case inconsistencies, and standardizing categorical fields. Resolved missing data by inferring three blank brand entries from product names, categorizing missing cities and payment methods as "Unspecified", and removing extra spacing from channel names.
+   Data Modeling: Built a robust Star Schema model connecting five dimension tables (DimProducts, DimCustomers, DimStores, DimSalesReps, DimDate) to two primary fact tables (FactSales, FactTargets). Merged the staging Returns table into the Sales table using SalesLineID as the unique identifier to accurately map returned products to specific order lines.
+   Technical Execution: Authored over 35 DAX measures to calculate critical commercial indicators, including GrossMargin%, TargetAchievement%, RefundRate%, and TargetVariance. Developed a custom RFM (Recency, Frequency, Monetary) customer segmentation model using DAX, grading customers on a 1-6 scale (from "Lapsed" to "High-Value Active") to analyze purchasing behavior.
+   Visual Strategy: Designed a multi-page interactive dashboard featuring an Executive Summary, Period Trend Analysis, Customer Analysis, and Sales Representative Leaderboards to allow stakeholders to drill down into specific performance drivers.
+4. Results
+   Evaluated 18 months of retail data to contextualize the company's 96.90% overarching target achievement.
+   Highlighted extreme variance in store-level execution: Ikeja Experience Centre (102.80%), Abuja Central (102.64%), and Victoria Island (101.25%) exceeded targets, while four other stores fell below 95% achievement.
+   Identified the WhatsApp/Phone channel as a highly efficient growth opportunity, noting it delivered the highest average order value (₦648,000) and the lowest return rate (2.36%) across the business.
