@@ -11,19 +11,19 @@ How did Nexora perform against its sales target, where did performance differ ac
 ## Dashboard preview
 
 ### Executive overview
-![Executive dashboard](ExecutiveDashBoard.png)
+![Executive dashboard](screenshots/executive-dashboard.png)
 
 ### Customer analysis
-![Customer analysis](CustomerAnalysis.png)
+![Customer analysis](screenshots/customer-analysis.png)
 
 ### Sales representative performance
-![Sales representative performance](SalesRepPerformance.png)
+![Sales representative performance](screenshots/sales-rep-performance.png)
 
 ### Time analysis
-![Time analysis](TImeAnalysis.png)
+![Time analysis](screenshots/time-analysis.png)
 
 ### Data model
-![Power BI data model](Schema.png)
+![Power BI data model](screenshots/data-model.png)
 
 ## Selected results
 
@@ -76,10 +76,10 @@ See the full [Data Quality and Limitations note](documentation/data-quality-and-
 
 ## Repository contents
 
-- `Nexora_Retail_Nig_LTD_Tentative_Dashboard_10_11_2026_Finalized.pbix` — Power BI report file.
-- `ExecutiveDashBoard.png`, `CustomerAnalysis.png`, `SalesRepPerformance.png`, `TImeAnalysis.png`, `Schema.png` — dashboard and model screenshots.
-- `Nexora Retail Nig LTD — Dashboard finalized QA Report10_14_2026.pdf` — finalized QA report.
-- `Nexora_Retail_Nigeria_Ltd_Data_Quality_and_Limitations.docx` — formatted Word documentation.
+- `report/Nexora_Retail_Nig_LTD_Tentative_Dashboard_10_11_2026_Finalized.pbix` — Power BI report file.
+- `screenshots/` — dashboard and model screenshots, with consistent lowercase filenames.
+- `documentation/qa-report-2026-10-14.pdf` — finalized QA report.
+- `documentation/data-quality-and-limitations.docx` — formatted Word documentation.
 - `documentation/` — Markdown documentation and index.
 
 ## Tools and skills demonstrated
