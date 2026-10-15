@@ -57,9 +57,9 @@ The screenshots below are displayed at approximately **80% of the previous full-
 
 | Metric | Result | Definition |
 |---|---:|---|
-| Gross Sales | ₦3.618B | Sales value before discounts |
-| Net Sales | ₦3.4439B | Gross Sales less discount value |
-| Net Revenue | ₦3.3055B | Net Sales less refunds |
+| Gross Sales | ₦3.62B | Sales value before discounts |
+| Net Sales | ₦3.44B | Gross Sales less discount value |
+| Net Revenue | ₦3.31B | Net Sales less refunds |
 | Gross Profit | ₦754.26M | Net Revenue less Net COGS |
 | Gross Margin | 22.82% | Gross Profit as a share of Net Revenue |
 | Target Achievement | 96.90% | Net Sales divided by sales target |
