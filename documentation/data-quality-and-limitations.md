@@ -50,7 +50,7 @@ Source values such as **“Sme”** and **“Pos”** were noted during QA. Use 
 
 ### 7. Limited historical coverage
 
-The dataset covers January 2025 through June 2026 and contains no 2024 period. A 2025 year-over-year comparison is therefore unavailable. The reported H1 2026 vs H1 2025 comparison is a like-for-like six-month comparison, not a full-year comparison.
+The dataset covers January 2025 through June 2026 and contains no 2024 data, so a **full-year 2025 year-over-year comparison is unavailable**. The reported H1 2026 vs H1 2025 comparison is a like-for-like six-month comparison, not a full-year comparison.
 
 ### 8. Date-filtered customer segments
 
