@@ -1,27 +1,67 @@
 # Nexora Retail Nigeria Ltd. — Power BI Portfolio Case Study
 
-A commercial performance analysis built in Power BI for **January 2025–June 2026**. The project examines sales-target attainment, revenue retained after refunds, margin, returns, store performance, customer behavior, and channel mix.
+A commercial performance analysis built in Power BI for **January 2025–June 2026**, examining sales-target attainment, revenue after refunds, profitability, store performance, customer behavior, returns, and channel mix.
 
-> **Portfolio note:** This repository contains dashboard screenshots, the Power BI project file, and supporting documentation. GitHub displays these materials but does not host the report as an interactive Power BI web experience. Open the `.pbix` file in Power BI Desktop to explore the report.
+> **Portfolio note:** This repository contains dashboard screenshots, the Power BI project file, and supporting documentation. GitHub does not host the report as an interactive Power BI web experience. Download the .pbix file and open it in Power BI Desktop to explore the report.
 
-## Business question
+## Executive summary
 
-How did Nexora perform against its sales target, where did performance differ across the business, and which patterns warrant further investigation?
+Nexora Retail Nigeria Ltd.'s commercial performance was close to, but below, its sales target during the January 2025–June 2026 reporting period. Overall target achievement was **96.90%**, leaving a 3.10% gap against the target.
+
+The first-half comparison provides a more nuanced picture. **H1 2026 Net Sales declined 1.30% year over year and Net Revenue declined 1.21%, while Gross Profit remained approximately flat, increasing 0.04%.** Gross margin rose from 22.60% to 22.89%, an improvement of 0.29 percentage points. This indicates relative margin resilience despite lower sales and revenue, although further analysis is needed to determine what drove the change.
+
+Performance was not uniform across the business. Ikeja, Abuja, and Victoria Island exceeded their sales targets, while Kano recorded the lowest target achievement and the highest store unit return rate. These differences provide a basis for prioritising store-level investigation, but they do not establish the causes of underperformance or returns.
+
+Three additional signals merit investigation: gross margin was lower across higher discount bands; WhatsApp/Phone recorded a relatively high average order value; and “Defective” was the most frequently recorded return-reason category. These patterns can guide follow-up analysis, but the available data does not establish causality, incremental profitability, or operational root causes.
+
+**Business implication:** Nexora should investigate the drivers of the target gap, determine whether margin resilience is sustainable, and prioritise store performance and return patterns for further review. Any operational changes should be evaluated against defined performance measures rather than assumed to be effective from descriptive results alone.
+
+## Business questions
+
+This analysis examines four questions:
+
+1. **Commercial performance:** How closely did Nexora meet its sales target, and how did sales, revenue, and profitability change over time?
+2. **Performance variation:** Which stores and sales channels show results that warrant closer investigation?
+3. **Margin and returns:** How do discount bands and recorded return patterns relate to commercial performance?
+4. **Decision priorities:** Which findings provide the strongest basis for further analysis, and what additional evidence is needed before acting?
 
 ## Key findings
 
-- **Target gap:** overall target achievement was **96.90%**, a 3.10% shortfall against the sales target.
-- **Like-for-like period comparison:** H1 2026 Net Sales were **1.30% below H1 2025** and Net Revenue was down 1.21%, while Gross Profit was approximately flat (+0.04%). Gross margin rose from 22.60% to 22.89%.
-- **Store variation:** Ikeja (102.80%), Abuja (102.64%), and Victoria Island (101.25%) exceeded target. Kano had the lowest target achievement (86.48%) and the highest store unit return rate (4.06%). These differences identify where to investigate; they do not establish why the gaps occurred.
-- **Discount and margin:** observed gross margin declined across higher discount bands. This is an association in the available data, not proof that discounts caused the decline or increased sales volume.
-- **Channel signal:** WhatsApp/Phone had an average order value of about **₦648,000**, a 2.36% unit return rate, and approximately 12.4% of revenue. This warrants further testing but does not prove scalable or incremental profit.
-- **Recorded return reasons:** “Defective” was the largest recorded category (194 units; about 34.3% of returned units). The label does not establish the operational root cause.
+### 1. Sales target attainment remains below target
 
-These findings are descriptive signals for prioritising further analysis, not causal conclusions.
+Overall target achievement was **96.90%**, representing a 3.10% shortfall against the sales target. This establishes the overall performance gap; further analysis is required to identify the periods and business segments contributing most to it.
+
+### 2. Gross profit remained stable despite lower first-half sales
+
+H1 2026 Net Sales were 1.30% below H1 2025, and Net Revenue declined 1.21%. Gross Profit increased approximately 0.04%, while gross margin rose from 22.60% to 22.89%.
+
+The results show that gross profit was broadly stable despite lower sales and revenue. They do not, by themselves, explain whether this was driven by product mix, discounting, cost movements, or another factor.
+
+### 3. Store performance varies materially
+
+Ikeja achieved 102.80% of target, Abuja 102.64%, and Victoria Island 101.25%. Kano recorded the lowest target achievement at 86.48% and the highest store unit return rate at 4.06%.
+
+These results identify locations for comparative investigation. They do not establish why stores performed differently, and the return rate should be assessed alongside sales volume and return counts.
+
+### 4. Higher discount bands are associated with lower gross margin
+
+Observed gross margin declined across higher discount bands. This association warrants further investigation into discount policy, product mix, and profitability. The analysis does not prove that discounts caused lower margin or generated additional sales volume.
+
+### 5. WhatsApp/Phone shows a channel signal worth testing
+
+WhatsApp/Phone recorded an average order value of approximately **₦648,000**, a 2.36% unit return rate, and approximately 12.4% of revenue.
+
+These metrics make the channel a candidate for deeper analysis. Average order value and revenue share alone do not establish incremental sales, acquisition efficiency, or scalable profit.
+
+### 6. “Defective” is the largest recorded return-reason category
+
+“Defective” accounted for 194 returned units, approximately 34.3% of returned units. This makes it the largest recorded return-reason category in the dataset.
+
+The label describes the recorded reason, not the verified operational root cause. Further investigation would need to examine product, supplier, batch, and return-processing records where available.
 
 ## Dashboard preview
 
-The screenshots below are displayed at approximately **80% of the previous full-width presentation**. Open an image in GitHub to inspect its details at full resolution.
+The screenshots below are displayed at approximately 80% width. Open an image in GitHub to inspect it at full resolution.
 
 ### Executive overview
 
@@ -66,12 +106,21 @@ The screenshots below are displayed at approximately **80% of the previous full-
 
 **Metric distinction:** Net Sales, Net Revenue, and Gross Profit are different measures and are not interchangeable.
 
+## Recommended areas for further investigation
+
+The findings suggest four analytical priorities. These are proposed next steps, not claims that the underlying causes have already been established.
+
+1. **Diagnose the target gap.** Break down target achievement by month and store to determine where the largest contribution to the shortfall occurred.
+2. **Investigate margin resilience.** Examine product mix, cost movements, and discount patterns to understand how gross profit remained stable as sales declined.
+3. **Review store and return differences.** Compare return counts and rates, product categories, and recorded return reasons to identify patterns requiring operational review.
+4. **Test channel economics.** Assess order value, return rates, and available cost or acquisition data before making decisions about channel expansion.
+
 ## Methodology and tools
 
-1. **Prepare data — Power Query:** review data types, standardize categorical values, address missing descriptive fields, and document inferred brand mappings.
+1. **Prepare data — Power Query:** review data types, standardise categorical values, address missing descriptive fields, and document inferred brand mappings.
 2. **Model data:** connect product, customer, store, sales representative, and date dimensions to sales and target facts.
 3. **Build measures — DAX:** calculate sales, discounts, refunds, revenue, cost, gross profit, margin, target achievement, returns, time comparisons, and customer segmentation.
-4. **Design report pages:** build executive, time, customer, and sales representative analysis pages, supported by a data-model view.
+4. **Design report pages:** build executive, time, customer, sales representative, and supporting analytical pages.
 5. **Validate:** check KPI arithmetic, model relationships, date behavior, slicers, drill-through, and report interactions.
 
 ## Data quality, QA, and limitations
@@ -95,11 +144,11 @@ For full detail, read the [Data Quality and Limitations note](documentation/data
 
 ## Source dataset
 
-- **Original raw workbook:** [Nexora_PowerBI_Assessment_Raw_Dataset (WELUP DIGITAL).xlsx](<Nexora_PowerBI_Assessment_Raw_Dataset%20(WELUP%20DIGITAL).xlsx>) — the source workbook supplied for the assessment, before the Power Query cleaning and transformation steps documented in this project. The workbook is currently at the repository root; the intended long-term location is `data/`.
+- **Original raw workbook:** [Nexora_PowerBI_Assessment_Raw_Dataset (WELUP DIGITAL).xlsx](data/Nexora_PowerBI_Assessment_Raw_Dataset%20%28WELUP%20DIGITAL%29.xlsx) — the source workbook supplied for the assessment, before Power Query cleaning and transformation.
 
 ## Repository contents and access
 
-- **Power BI report:** [Open the report folder](report/) — download the `.pbix` file and open it in Power BI Desktop.
+- **Power BI report:** [Open the report folder](report/) — download the .pbix file and open it in Power BI Desktop.
 - **Screenshots:** [View dashboard and model images](screenshots/).
 - **QA report:** [Read the QA report (PDF)](documentation/qa-report-2026-10-14.pdf).
 - **Data quality:** [Read the full data-quality note (Markdown)](documentation/data-quality-and-limitations.md) or [Word version](documentation/data-quality-and-limitations.docx).
