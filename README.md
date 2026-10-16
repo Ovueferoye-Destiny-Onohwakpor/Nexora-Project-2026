@@ -93,6 +93,10 @@ Key limitations:
 
 For full detail, read the [Data Quality and Limitations note](documentation/data-quality-and-limitations.md), the [QA report](documentation/qa-report-2026-10-14.pdf), and the [documentation index](documentation/README.md).
 
+## Source dataset
+
+- **Original raw workbook:** [Nexora_PowerBI_Assessment_Raw_Dataset (WELUP DIGITAL).xlsx](<Nexora_PowerBI_Assessment_Raw_Dataset%20(WELUP%20DIGITAL).xlsx>) — the source workbook supplied for the assessment, before the Power Query cleaning and transformation steps documented in this project. The workbook is currently at the repository root; the intended long-term location is `data/`.
+
 ## Repository contents and access
 
 - **Power BI report:** [Open the report folder](report/) — download the `.pbix` file and open it in Power BI Desktop.
