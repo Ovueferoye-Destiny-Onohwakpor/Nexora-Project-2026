@@ -8,7 +8,7 @@ A commercial performance analysis built in Power BI for **January 2025–June 20
 
 Nexora Retail Nigeria Ltd.'s commercial performance was close to, but below, its sales target during the January 2025–June 2026 reporting period. Overall target achievement was **96.90%**, leaving a 3.10% gap against the target.
 
-The first-half comparison provides a more nuanced picture. **H1 2026 Net Sales declined 1.30% year over year and Net Revenue declined 1.21%, while Gross Profit remained approximately flat, increasing 0.04%.** Gross margin rose from 22.60% to 22.89%, an improvement of 0.29 percentage points. This indicates relative margin resilience despite lower sales and revenue, although further analysis is needed to determine what drove the change.
+The first-half comparison provides a more nuanced picture. **H1 2026 Net Sales declined 1.30% versus H1 2025 and Net Revenue declined 1.21%, while Gross Profit remained approximately flat, increasing 0.04%.** Gross margin rose from 22.60% to 22.89%, an improvement of 0.29 percentage points. This indicates relative margin resilience despite lower sales and revenue, although further analysis is needed to determine what drove the change.
 
 Performance was not uniform across the business. Ikeja, Abuja, and Victoria Island exceeded their sales targets, while Kano recorded the lowest target achievement and the highest store unit return rate. These differences provide a basis for prioritising store-level investigation, but they do not establish the causes of underperformance or returns.
 
@@ -61,7 +61,7 @@ The label describes the recorded reason, not the verified operational root cause
 
 ## Dashboard preview
 
-The screenshots below are displayed at approximately 80% width. Open an image in GitHub to inspect it at full resolution.
+The screenshots below are selected portfolio-facing pages. Customer detail tables and drill-through pages are retained for internal validation and investigation, not presented as executive-facing portfolio pages. The screenshots are displayed at approximately 80% width; open an image in GitHub to inspect it at full resolution.
 
 ### Executive overview
 
@@ -69,16 +69,10 @@ The screenshots below are displayed at approximately 80% width. Open an image in
   <img src="screenshots/executive-dashboard.png" alt="Executive dashboard showing overall commercial performance" width="80%" />
 </p>
 
-### Customer analysis
+### Commercial diagnostics
 
 <p align="center">
-  <img src="screenshots/customer-analysis.png" alt="Customer analysis report page" width="80%" />
-</p>
-
-### Sales representative performance
-
-<p align="center">
-  <img src="screenshots/sales-rep-performance.png" alt="Sales representative performance report page" width="80%" />
+  <img src="screenshots/commercial-diagnostics.png" alt="Commercial diagnostics report page" width="80%" />
 </p>
 
 ### Time analysis
@@ -101,10 +95,11 @@ The screenshots below are displayed at approximately 80% width. Open an image in
 | Net Sales | ₦3.44B | Gross Sales less discount value |
 | Net Revenue | ₦3.31B | Net Sales less refunds |
 | Gross Profit | ₦754.26M | Net Revenue less Net COGS |
-| Gross Margin | 22.82% | Gross Profit as a share of Net Revenue |
+| Gross Margin | 22.82% | Gross Profit divided by Net Revenue |
+| Average Order Value (AOV) | ₦550.92K | Net Revenue divided by 6,000 orders |
 | Target Achievement | 96.90% | Net Sales divided by sales target |
 
-**Metric distinction:** Net Sales, Net Revenue, and Gross Profit are different measures and are not interchangeable.
+**Metric distinction:** Net Sales, Net Revenue, and Gross Profit are different measures and are not interchangeable. Net Revenue is post-refund revenue; it is the numerator for AOV and the denominator for Gross Margin. Return rates are calculated against units sold. The report's 6,000-order count should be read as orders, not customers.
 
 ## Recommended areas for further investigation
 
@@ -134,7 +129,7 @@ Key limitations:
 - Three blank product brands were inferred from product-name patterns; the mappings are not source-confirmed.
 - 12 customer records have missing City values and 12 sales lines have missing PaymentMethod values; both are represented as Unspecified.
 - 314 customer-name values are duplicated. Use CustomerID for customer-level analysis rather than treating names as unique identifiers.
-- The dataset covers January 2025–June 2026 and contains no 2024 data, so 2025 year-over-year analysis is unavailable.
+- The dataset covers January 2025–June 2026 and contains no 2024 data, so a full-year 2025 year-over-year comparison is unavailable. The H1 2026 vs H1 2025 comparison is a like-for-like six-month comparison, not a full-year comparison.
 - Targets are defined at store/month level, not for every day or every product, representative, channel, customer, or city. Some target measures are intentionally blank under incompatible slicer contexts.
 - Customer segment thresholds vary with the selected date context.
 - Return-reason labels, discount-band margin differences, channel metrics, and store gaps are descriptive signals; they do not prove root causes or causal effects.
@@ -153,6 +148,13 @@ For full detail, read the [Data Quality and Limitations note](documentation/data
 - **QA report:** [Read the QA report (PDF)](documentation/qa-report-2026-10-14.pdf).
 - **Data quality:** [Read the full data-quality note (Markdown)](documentation/data-quality-and-limitations.md) or [Word version](documentation/data-quality-and-limitations.docx).
 - **Documentation index:** [Browse supporting documentation](documentation/README.md).
+
+## Model terminology
+
+- **Segment** is the source account-type / primary-residency classification.
+- **CustomerSegment** is the DAX-derived behavioral interaction tier and may change with the selected date context.
+
+These fields have different meanings and should not be substituted for one another in visuals, measures, or narrative.
 
 ## Tools and skills demonstrated
 
