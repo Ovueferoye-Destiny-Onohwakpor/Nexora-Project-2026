@@ -54,7 +54,7 @@ The dataset covers January 2025 through June 2026 and contains no 2024 data, so 
 
 ### 8. Date-filtered customer segments
 
-Customer segment thresholds are responsive to the active date context. Across the full dataset, the noted 20th and 80th percentile thresholds are approximately ₦1.44 million and ₦4.80 million; for a 2026-only context, the 80th percentile is approximately ₦1.73 million. Segment membership can therefore change when date filters change. A “No Purchase History” result under a selected-period filter means no purchase in that period, not necessarily no all-time purchase.
+`CustomerSegment` behavioral-tier thresholds are responsive to the active date context; this is distinct from the source `Segment` account-type / primary-residency classification. Across the full dataset, the noted 20th and 80th percentile thresholds are approximately ₦1.44 million and ₦4.80 million; for a 2026-only context, the 80th percentile is approximately ₦1.73 million. Segment membership can therefore change when date filters change. A “No Purchase History” result under a selected-period filter means no purchase in that period, not necessarily no all-time purchase.
 
 ### 9. Sales-target granularity and filter behavior
 
