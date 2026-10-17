@@ -135,7 +135,7 @@ Key limitations:
 - Return-reason labels, discount-band margin differences, channel metrics, and store gaps are descriptive signals; they do not prove root causes or causal effects.
 - Refresh may depend on a local Google Drive for Desktop path and may require environment-specific changes on another computer.
 
-For full detail, read the [Data Quality and Limitations note](documentation/data-quality-and-limitations.md), the [QA report](documentation/qa-report-2026-10-14.pdf), and the [documentation index](documentation/README.md).
+For full detail, read the [Data Quality and Limitations note](documentation/data-quality-and-limitations.md), the [QA report](documentation/qa-report-2026-10-14.md), and the [documentation index](documentation/README.md).
 
 ## Source dataset
 
@@ -145,7 +145,7 @@ For full detail, read the [Data Quality and Limitations note](documentation/data
 
 - **Power BI report:** [Download the Power BI report](report/Nexora_Retail_Nigeria_Ltd_Power_BI_Report.pbix) and open it in Power BI Desktop. GitHub does not render the report interactively.
 - **Screenshots:** [View dashboard and model images](screenshots/).
-- **QA report:** [Read the QA report (PDF)](documentation/qa-report-2026-10-14.pdf).
+- **QA report:** [Read the comprehensive QA report (Markdown)](documentation/qa-report-2026-10-14.md).
 - **Data quality:** [Read the data-quality and limitations note](documentation/data-quality-and-limitations.md).
 - **Documentation index:** [Browse supporting documentation](documentation/README.md).
 
