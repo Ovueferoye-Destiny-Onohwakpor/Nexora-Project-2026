@@ -58,7 +58,7 @@ Customer segment thresholds are responsive to the active date context. Across th
 
 ### 9. Sales-target granularity and filter behavior
 
-Targets are defined at **store/month** level, not at day, product, sales representative, channel, customer, or city level. On the Executive page, Target and Achievement are intentionally blank when Channel, customer Region, or City slicers are active because the target cannot be allocated reliably to those selections. A single-day selection may still show the month’s target; that value is not a daily target.
+Targets are defined at **store/month** level, not at day, product, sales representative, channel, customer, or city level. Targets are defined at store/month level, so they cannot be reliably allocated to channel, customer, or city selections. The Executive page uses a StoreName slicer synced exclusively to Commercial Diagnostics; do not interpret store/month targets as daily or product-, representative-, channel-, customer-, or city-level targets. A single-day selection may still show the month’s target; that value is not a daily target.
 
 ### 10. Return reasons do not establish root cause
 
@@ -88,7 +88,15 @@ Segment, product, and customer comparisons describe the records available in thi
 
 The source workbook was reported by the owner to use a Google Drive for Desktop mapped path (`H:\\My Drive\\_Portfolio\\Nexora_PowerBI_Assessment_Raw_Dataset (WELUP DIGITAL).xlsx`). Cross-machine refresh was reported as passed by the owner, but no independent environment logs were supplied here. Refresh may require updating the source path and credentials on another computer.
 
-## Validated KPI context
+## Metric definitions and validated KPI context
+
+- **Net Sales** is Gross Sales less discounts and is the numerator used for target achievement.
+- **Net Revenue** is Net Sales less refunds. It is the numerator for average order value (AOV) and the denominator for gross margin.
+- **Average Order Value (AOV)** is Net Revenue divided by order count; the reviewed report shows approximately ₦550.92K across 6,000 orders.
+- **Gross Margin** is Gross Profit divided by Net Revenue.
+- **Unit return rate** is returned units divided by units sold.
+
+
 
 The reviewed report records approximately:
 
