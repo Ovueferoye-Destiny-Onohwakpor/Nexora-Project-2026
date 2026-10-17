@@ -143,7 +143,7 @@ For full detail, read the [Data Quality and Limitations note](documentation/data
 
 ## Repository contents and access
 
-- **Power BI report:** [Open the report folder](report/) — download the .pbix file and open it in Power BI Desktop.
+- **Power BI report:** [Download the Power BI report](report/Nexora_Retail_Nigeria_Ltd_Power_BI_Report.pbix) and open it in Power BI Desktop. GitHub does not render the report interactively.
 - **Screenshots:** [View dashboard and model images](screenshots/).
 - **QA report:** [Read the QA report (PDF)](documentation/qa-report-2026-10-14.pdf).
 - **Data quality:** [Read the data-quality and limitations note](documentation/data-quality-and-limitations.md).
