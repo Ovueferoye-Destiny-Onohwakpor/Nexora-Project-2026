@@ -1,6 +1,6 @@
 # Project Documentation
 
-Supporting material for the Nexora Retail Nigeria Ltd. Power BI portfolio case study.
+Supporting material for the Nexora Retail Nigeria Ltd. Power BI portfolio case study. The source `Segment` field (account type / primary-residency classification) is distinct from the DAX-derived `CustomerSegment` behavioral interaction tier.
 
 ## Documents
 
