@@ -113,9 +113,9 @@ The findings suggest four analytical priorities. These are proposed next steps, 
 ## Methodology and tools
 
 1. **Prepare data — Power Query:** review data types, standardise categorical values, address missing descriptive fields, and document inferred brand mappings.
-2. **Model data:** connect product, customer, store, sales representative, and date dimensions to sales and target facts.
+2. **Model data:** connect product, customer, store, sales representative, and date dimensions to sales and target facts; keep source `Segment` (account type / primary-residency classification) distinct from DAX-derived `CustomerSegment` (behavioral interaction tier).
 3. **Build measures — DAX:** calculate sales, discounts, refunds, revenue, cost, gross profit, margin, target achievement, returns, time comparisons, and customer segmentation.
-4. **Design report pages:** build executive, time, customer, sales representative, and supporting analytical pages.
+4. **Design report pages:** build executive and commercial diagnostic views, with supporting analytical pages. Customer detail tables and drill-through pages are retained for internal testing and investigation rather than highlighted as executive-facing portfolio pages.
 5. **Validate:** check KPI arithmetic, model relationships, date behavior, slicers, drill-through, and report interactions.
 
 ## Data quality, QA, and limitations
@@ -146,7 +146,7 @@ For full detail, read the [Data Quality and Limitations note](documentation/data
 - **Power BI report:** [Open the report folder](report/) — download the .pbix file and open it in Power BI Desktop.
 - **Screenshots:** [View dashboard and model images](screenshots/).
 - **QA report:** [Read the QA report (PDF)](documentation/qa-report-2026-10-14.pdf).
-- **Data quality:** [Read the full data-quality note (Markdown)](documentation/data-quality-and-limitations.md) or [Word version](documentation/data-quality-and-limitations.docx).
+- **Data quality:** [Read the data-quality and limitations note](documentation/data-quality-and-limitations.md).
 - **Documentation index:** [Browse supporting documentation](documentation/README.md).
 
 ## Model terminology
