@@ -139,7 +139,9 @@ For full detail, read the [Data Quality and Limitations note](documentation/data
 
 ## Source dataset
 
-- **Original raw workbook:** [Nexora_PowerBI_Assessment_Raw_Dataset (WELUP DIGITAL).xlsx](data/Nexora_PowerBI_Assessment_Raw_Dataset%20%28WELUP%20DIGITAL%29.xlsx) — the source workbook supplied for the assessment, before Power Query cleaning and transformation.
+The original assessment dataset was provided by **Welup Digital** as part of **Cohort 14 of its Data Analytics course**. The workbook is retained as the raw source for this portfolio project; credit is given here to acknowledge the dataset's source, not to imply ownership of the dataset by the report author.
+
+- **Raw workbook:** [Nexora_Retail_Raw_Dataset.xlsx](data/Nexora_Retail_Raw_Dataset.xlsx) — the source workbook supplied for the assessment, before Power Query cleaning and transformation.
 
 ## Repository contents and access
 
