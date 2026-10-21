@@ -4,6 +4,8 @@ A commercial performance analysis built in Power BI for **January 2025–June 20
 
 > **Portfolio note:** This repository contains dashboard screenshots, the Power BI project file, and supporting documentation. GitHub does not host the report as an interactive Power BI web experience. Download the .pbix file and open it in Power BI Desktop to explore the report.
 
+> **Connection and refresh note:** The packaged Power BI file currently does not connect successfully to the raw workbook in this repository. Reconnecting and refreshing have not been verified. The source is a static Excel flat file, not a live database or continuously updated feed, so refresh is mainly a reproducibility/setup concern rather than a recurring data-pipeline requirement. The documented report represents the analyzed dataset snapshot; anyone reproducing or refreshing it must update the Power Query source path to the workbook location on their computer.
+
 ## Executive summary
 
 Nexora Retail Nigeria Ltd.'s commercial performance was close to, but below, its sales target during the January 2025–June 2026 reporting period. Overall target achievement was **96.90%**, leaving a 3.10% gap against the target.
@@ -133,7 +135,7 @@ Key limitations:
 - Targets are defined at store/month level, not for every day or every product, representative, channel, customer, or city. Some target measures are intentionally blank under incompatible slicer contexts.
 - Customer segment thresholds vary with the selected date context.
 - Return-reason labels, discount-band margin differences, channel metrics, and store gaps are descriptive signals; they do not prove root causes or causal effects.
-- Refresh may depend on a local Google Drive for Desktop path and may require environment-specific changes on another computer.
+- The packaged PBIX currently does not connect successfully to the raw workbook in this repository; reconnecting and refreshing have not been verified. Because the source is a static Excel flat file rather than a live data feed, this primarily affects reproducibility and refresh setup, not ongoing pipeline operation. A user who needs to refresh the model must update the Power Query source path to the workbook's local location.
 
 For full detail, read the [Data Quality and Limitations note](documentation/data-quality-and-limitations.md), the [QA report](documentation/qa-report-2026-10-14.md), and the [documentation index](documentation/README.md).
 
@@ -145,7 +147,7 @@ The original assessment dataset was provided by **Welup Digital** as part of **C
 
 ## Repository contents and access
 
-- **Power BI report:** [Download the Power BI report](report/Nexora_Retail_Nigeria_Ltd_Power_BI_Report.pbix) and open it in Power BI Desktop. GitHub does not render the report interactively.
+- **Power BI report:** [Download the Power BI report](report/Nexora_Retail_Nig_LTD_Power_BI_Report.pbix) and open it in Power BI Desktop. GitHub does not render the report interactively.
 - **Screenshots:** [View dashboard and model images](screenshots/).
 - **QA report:** [Read the comprehensive QA report (Markdown)](documentation/qa-report-2026-10-14.md).
 - **Data quality:** [Read the data-quality and limitations note](documentation/data-quality-and-limitations.md).
