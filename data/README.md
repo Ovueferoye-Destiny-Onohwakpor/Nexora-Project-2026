@@ -18,9 +18,10 @@ This repository uses the dataset for a portfolio case study demonstrating data p
 - Data limitations identified during QA are documented in the [Data Quality and Limitations note](../documentation/data-quality-and-limitations.md) and the [Comprehensive QA Report](../documentation/qa-report-2026-10-14.md).
 - The reporting period is January 2025–June 2026. The absence of 2024 data limits full-year year-over-year comparisons.
 - Findings should be interpreted as analytical and decision-support signals, not as audited financial statements or proof of causation.
+- **Power BI connection status:** The packaged PBIX currently does not connect successfully to this workbook, and a successful reconnect/refresh has not been verified. This workbook is a static flat-file source, not a live database or scheduled feed. Refresh is therefore not a recurring operational requirement, but the source path must be corrected in Power Query if you want to reproduce or refresh the report on your machine.
 
 ## Related project resources
 
 - [Main project README](../README.md)
-- [Power BI report](../report/Nexora_Retail_Nigeria_Ltd_Power_BI_Report.pbix)
+- [Power BI report](../report/Nexora_Retail_Nig_LTD_Power_BI_Report.pbix)
 - [Documentation index](../documentation/README.md)
