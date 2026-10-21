@@ -84,9 +84,13 @@ Ikeja (102.80%), Abuja (102.64%), and Victoria Island (101.25%) exceeded target.
 
 Segment, product, and customer comparisons describe the records available in this dataset and time window. They should not automatically be generalized to future periods or the entire business without checking coverage, seasonality, and whether the dataset is representative.
 
-### 16. Refresh and environment dependency
+### 16. Power BI source connection and refresh limitation
 
-The source workbook was reported by the owner to use a Google Drive for Desktop mapped path (`H:\\My Drive\\_Portfolio\\Nexora_PowerBI_Assessment_Raw_Dataset (WELUP DIGITAL).xlsx`). Cross-machine refresh was reported as passed by the owner, but no independent environment logs were supplied here. Refresh may require updating the source path and credentials on another computer.
+**The packaged PBIX currently does not connect successfully to the raw Excel workbook in this repository. A successful reconnect and refresh have not been verified.** The earlier QA notes recorded a machine-specific Google Drive for Desktop path, but that path is not a reliable portable connection and should not be treated as a confirmed working configuration.
+
+The source dataset is a **static Excel flat file**, not a live database or continuously updated source. Consequently, refreshing is not a strong ongoing operational requirement for this portfolio case study: the report analyses a defined dataset snapshot, and no live ingestion pipeline is being demonstrated. The connection issue matters mainly for reproducibility and for anyone who wants to refresh the model after changing the workbook or opening the PBIX on another computer.
+
+If refresh is required, open the PBIX in Power BI Desktop, update the Power Query source path to the local copy of `data/Nexora_Retail_Raw_Dataset.xlsx` (or the intended workbook location), then refresh and validate the key totals. Until that process succeeds, describe the PBIX as **not currently refresh-verified**; do not claim that cross-machine refresh passed. This limitation does not, by itself, invalidate the documented analysis of the existing snapshot.
 
 ## Metric definitions and validated KPI context
 
