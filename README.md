@@ -77,10 +77,10 @@ The screenshots below are selected portfolio-facing pages. Customer detail table
   <img src="screenshots/commercial-diagnostics.png" alt="Commercial diagnostics report page" width="80%" />
 </p>
 
-### Time analysis
+### Customer analysis
 
 <p align="center">
-  <img src="screenshots/time-analysis.png" alt="Time analysis report page" width="80%" />
+  <img src="screenshots/customer-analysis.png" alt="Customer analysis report page" width="80%" />
 </p>
 
 ### Data model
@@ -122,7 +122,7 @@ The findings suggest four analytical priorities. These are proposed next steps, 
 
 ## Data quality, QA, and limitations
 
-The QA report dated 14 October 2026 records **47/47 checks passed**: 30 checks were verified against the model/data and 17 manual checks were owner-confirmed. The owner-confirmed checks are not represented as independently reproduced. Passing QA does not mean every source-data limitation has been corrected.
+The QA report, last revised 22 October 2026, records **47/47 checks passed** (QA closure date: 14 October 2026): 30 checks were verified against the model/data and 17 manual checks were owner-confirmed. The owner-confirmed checks are not represented as independently reproduced. Passing QA does not mean every source-data limitation has been corrected.
 
 Key limitations:
 
@@ -137,7 +137,7 @@ Key limitations:
 - Return-reason labels, discount-band margin differences, channel metrics, and store gaps are descriptive signals; they do not prove root causes or causal effects.
 - The packaged PBIX currently does not connect successfully to the raw workbook in this repository; reconnecting and refreshing have not been verified. Because the source is a static Excel flat file rather than a live data feed, this primarily affects reproducibility and refresh setup, not ongoing pipeline operation. A user who needs to refresh the model must update the Power Query source path to the workbook's local location.
 
-For full detail, read the [Data Quality and Limitations note](documentation/data-quality-and-limitations.md), the [QA report](documentation/qa-report-2026-10-14.md), and the [documentation index](documentation/README.md).
+For full detail, read the [Data Quality and Limitations note](documentation/data-quality-and-limitations.md), the [QA report](documentation/qa-report-2026-10-22.md), and the [documentation index](documentation/README.md).
 
 ## Source dataset
 
@@ -147,9 +147,10 @@ The original assessment dataset was provided by **Welup Digital** as part of **C
 
 ## Repository contents and access
 
+- **Stakeholder presentation:** [View the Nexora stakeholder presentation (PDF)](presentation/Nexora_Stakeholder_Presentation.pdf).
 - **Power BI report:** [Download the Power BI report](report/Nexora_Retail_Nig_LTD_Power_BI_Report.pbix) and open it in Power BI Desktop. GitHub does not render the report interactively.
 - **Screenshots:** [View dashboard and model images](screenshots/).
-- **QA report:** [Read the comprehensive QA report (Markdown)](documentation/qa-report-2026-10-14.md).
+- **QA report:** [Read the comprehensive QA report (Markdown)](documentation/qa-report-2026-10-22.md).
 - **Data quality:** [Read the data-quality and limitations note](documentation/data-quality-and-limitations.md).
 - **Documentation index:** [Browse supporting documentation](documentation/README.md).
 
